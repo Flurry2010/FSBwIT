@@ -75,4 +75,5 @@ public class Start {
 		
 		System.out.println("\n" + "Die Laufzeit vom ObjStack ist: " + (ende2-start2) + "ms");
 	}
+	//---http://www.angelikalanger.com/Articles/EffectiveJava/05.Clone-Part1/05.Clone-Part1.html---
 }
