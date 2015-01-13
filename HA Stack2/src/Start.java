@@ -6,19 +6,19 @@ public class Start {
 		Stack s1 = new Stack();
 		ObjStack s2 = new ObjStack();
 	
-		int[] arrayInt = new int[1000];
+		int[] arrayInt = new int[50000];
 		for(int i = 0; i < arrayInt.length; i++){
 			arrayInt[i] = (int)(Math.random() * 10);
 		}
 		
-		char[] arrayChar = new char[1000];
+		char[] arrayChar = new char[50000];
 		for(int i = 0; i < arrayChar.length; i++){
 			arrayChar[i] = (char)('a' + 26*Math.random());
 		}
 		
-		String[] arrayString = new String[100];
+		String[] arrayString = new String[50000];
 		for(int i = 0; i < arrayString.length; i++){
-	//		arrayString[i] = ('a' + 26*Math.random());
+		arrayString[i] = String.valueOf((char)('a' + 26*Math.random()));
 		}
 		
 		//-----START-STACK---------------------------
@@ -27,19 +27,19 @@ public class Start {
 
 		//-----PUSH----------------------------------
 		
-//		for(int i : arrayInt)
-//			s1.push(i);
+		for(int i : arrayInt)
+			s1.push(i);
 		
 //		for(char i : arrayChar)
 //			s1.push(i);
 		
-		for(String i : arrayString)
-			s1.push(i);
+//		for(String i : arrayString)
+//			s1.push(i);
 
 		//-----POP----------------------------------
 		
 		while(!s1.isEmpty())
-			System.out.print(s1.pop());
+			s1.pop();
 		
 		long ende1 = System.currentTimeMillis();
 		
@@ -57,19 +57,19 @@ public class Start {
 
 		//-----PUSH----------------------------------
 
-//		for(int i : arrayInt)
-//			s2.push(i);
+		for(int i : arrayInt)
+			s2.push(i);
 		
 //		for(char i : arrayChar)
 //			s2.push(i);
 		
-		for(String i : arrayString)
-			s2.push(i);
+//		for(String i : arrayString)
+//			s2.push(i);
 
 		//-----POP----------------------------------
 		
 		while(!s2.isEmpty())
-			System.out.print(s2.pop());
+			s2.pop();
 		
 		long ende2 = System.currentTimeMillis();
 		
