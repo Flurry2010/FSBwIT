@@ -18,7 +18,7 @@ public class Start {
 		
 		String[] arrayString = new String[100];
 		for(int i = 0; i < arrayString.length; i++){
-			arrayString[i] = ('a' + 26*Math.random());
+	//		arrayString[i] = ('a' + 26*Math.random());
 		}
 		
 		//-----START-STACK---------------------------
