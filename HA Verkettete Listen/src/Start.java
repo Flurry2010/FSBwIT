@@ -5,18 +5,37 @@ public class Start {
 		
 		Liste l = new Liste();
 		
-		l.push("Wagon 1");
+		l.add("Wagon 1");
 		l.push("Wagon 2");
-		l.push("Wagon 3");
+		l.add("Wagon 3");
 		l.push("Wagon 4");
-		l.push("Wagon 5");
+		l.add("Wagon 5");
+		l.push("Wagon 6");
 		
 		System.out.println(l.toString());
-		System.out.println(l.getSize());
 		
-		l.del("Wagon 1");
+//		l.del("Wagon 6");
+//		
+//		System.out.println(l.toString());
+//		
+//
+//		
+//		System.out.println(l.isEmpty());
+//		
+//		System.out.println(l.pop());
+		
+//		System.out.println(l.getIndex("Wagon 4"));
+		
+//		System.out.println(l.atIndex(2));
+		
+//		System.out.println(l.remove(2));
+//		
+//		System.out.println(l.toString());
+		
+		l.insert(3, "Wagon neu");
 		
 		System.out.println(l.toString());
+	
 
 		
 		
