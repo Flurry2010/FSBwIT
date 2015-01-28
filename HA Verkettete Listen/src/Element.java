@@ -32,5 +32,4 @@ public class Element {
 		if(next!=null)next = next.del(a);
 		return this;
 	}
-
 }

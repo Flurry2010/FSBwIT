@@ -14,7 +14,7 @@ public class Liste {
 		}
 	}
 
-	// -----Loescht eine Element-----------------
+	// -----Loescht ein Element-----------------
 
 	public void del(String a) {
 		if (!isEmpty())
@@ -52,9 +52,7 @@ public class Liste {
 	// -----Fragt ab ob die Liste Lerr ist------------------
 
 	public boolean isEmpty() {
-		if (first != null)
-			return false;
-		return true;
+		return first == null;
 	}
 
 	// -----Fuegt mit add eine Element hinzu----------------
@@ -70,7 +68,6 @@ public class Liste {
 		if (isEmpty())
 			return null;
 		first = first.getNext();
-		del(temp.getValue());
 		return temp.getValue();
 
 	}
@@ -85,7 +82,7 @@ public class Liste {
 
 	private int getIndex(String a, Element temp) {
 		if (temp == null)
-			return 0;
+			return 1;
 		if (a.equals(temp.getValue()))
 			return 1;
 		return getIndex(a, temp.getNext()) + 1;
@@ -114,8 +111,6 @@ public class Liste {
 			return null;
 		if (index > getSize() - 1)
 			return null;
-		// if(index < 0)
-		// return null;
 		if (index == getSize() - 1) {
 			String inhalt = first.getValue();
 			first = first.getNext();

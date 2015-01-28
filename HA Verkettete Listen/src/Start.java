@@ -24,7 +24,7 @@ public class Start {
 //		
 //		System.out.println(l.pop());
 		
-//		System.out.println(l.getIndex("Wagon 4"));
+System.out.println(l.getIndex("Wagon 7"));
 		
 //		System.out.println(l.atIndex(2));
 		
